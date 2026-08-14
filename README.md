@@ -2,10 +2,6 @@
 
 > CERCA.VERT tra listini Excel/CSV, **direttamente nel browser**. Una PWA installabile, 100% client‑side, pensata per chi confronta listini ogni giorno e non vuole caricare i propri dati su un server.
 
-![ExcelCFR — schermata principale](docs/screenshot.png)
-
-> Lo screenshot è un placeholder: il tuo build avrà il look reale.
-
 > All'interno dell'app trovi una **Guida** completa cliccando sull'icona libro nell'header. Per le **note legali** vedi il footer (oppure guarda il banner che compare al primo avvio).
 
 ## Come funziona

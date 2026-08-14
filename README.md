@@ -1,8 +1,8 @@
-# ExelCFR
+# ExcelCFR
 
 > CERCA.VERT tra listini Excel/CSV, **direttamente nel browser**. Una PWA installabile, 100% client‑side, pensata per chi confronta listini ogni giorno e non vuole caricare i propri dati su un server.
 
-![ExelCFR — schermata principale](docs/screenshot.png)
+![ExcelCFR — schermata principale](docs/screenshot.png)
 
 > Lo screenshot è un placeholder: il tuo build avrà il look reale.
 
@@ -22,23 +22,23 @@ Per ciascuna colonna restituita da una regola di lookup puoi scegliere **come sc
 - **Aggiungi nuova colonna** *(default)* — crea una colonna in più nel file di output (in coda, dopo una colonna scelta o a un indice). Comportamento storico.
 - **Riempi colonna esistente** — non aggiunge nessuna colonna: scrive il valore trovato dentro una colonna **già presente** nel file principale. Di default riempie **solo le celle vuote** (`null` / `undefined` / stringa `""`); con la spunta «Sovrascrivi anche se la cella ha già un valore» le celle con un match vengono sostituite (le celle senza match restano sempre intatte).
 
-> **Esempio**: il file principale ha una colonna `Descrizione` parzialmente compilata. In modalità "Riempi colonna esistente" su `Descrizione`, ExelCFR riempie solo le celle vuote attingendo dal listino sorgente, lasciando intatte le descrizioni già scritte a meno che non abiliti la sovrascrittura.
+> **Esempio**: il file principale ha una colonna `Descrizione` parzialmente compilata. In modalità "Riempi colonna esistente" su `Descrizione`, ExcelCFR riempie solo le celle vuote attingendo dal listino sorgente, lasciando intatte le descrizioni già scritte a meno che non abiliti la sovrascrittura.
 
 Le configurazioni salvate in JSON con versioni precedenti (senza il campo `writeMode`) vengono automaticamente interpretate come «Aggiungi nuova colonna», quindi non serve rifarle.
 
 ## Privacy
 
-ExelCFR è **completamente client‑side**. Nessun file viene mai inviato a un server: il parsing, il merge e l'export avvengono nel tuo browser. La PWA, una volta installata, funziona anche **offline**. Quando la metti in produzione su GitHub Pages, l'unica connessione di rete avviene per scaricare l'app stessa la prima volta — i dati restano sempre sul tuo dispositivo.
+ExcelCFR è **completamente client‑side**. Nessun file viene mai inviato a un server: il parsing, il merge e l'export avvengono nel tuo browser. La PWA, una volta installata, funziona anche **offline**. Quando la metti in produzione su GitHub Pages, l'unica connessione di rete avviene per scaricare l'app stessa la prima volta — i dati restano sempre sul tuo dispositivo.
 
 ## Setup locale
 
 Richiesti **Node.js ≥ 18** e **npm**.
 
 ```bash
-git clone https://github.com/<tuo-utente>/ExelCFR.git
-cd ExelCFR
+git clone https://github.com/<tuo-utente>/ExcelCFR.git
+cd ExcelCFR
 npm install
-npm run dev          # http://localhost:5173/ExelCFR/
+npm run dev          # http://localhost:5173/ExcelCFR/
 npm run build        # produce ./dist
 npm run preview      # serve ./dist
 ```

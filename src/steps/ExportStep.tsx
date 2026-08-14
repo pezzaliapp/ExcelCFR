@@ -167,7 +167,7 @@ export function ExportStep({ files, mainFile, rules, onLoadConfig }: Props) {
     const baseName = mainFile.label.replace(/\.[^.]+$/, '').replace(/[^\w-]+/g, '_') || 'principale';
     const sourceTag =
       rules.length > 1 ? `_${(src.label || 'sorgente').replace(/[^\w-]+/g, '_')}` : '';
-    const fname = `ExelCFR_no-match_${baseName}${sourceTag}_${stamp}.csv`;
+    const fname = `ExcelCFR_no-match_${baseName}${sourceTag}_${stamp}.csv`;
 
     const blob = new Blob([text], { type: 'text/csv;charset=utf-8' });
     const url = URL.createObjectURL(blob);
@@ -205,7 +205,7 @@ export function ExportStep({ files, mainFile, rules, onLoadConfig }: Props) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `ExelCFR_config_${Date.now()}.json`;
+    a.download = `ExcelCFR_config_${Date.now()}.json`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

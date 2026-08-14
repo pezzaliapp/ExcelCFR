@@ -30,7 +30,7 @@ export function exportXlsx(result: MergedResult, opts: XlsxExportOptions): void 
   const wb = XLSX.utils.book_new();
   const aoa = rowsToAOA(result);
   const ws = XLSX.utils.aoa_to_sheet(aoa, { cellDates: true });
-  XLSX.utils.book_append_sheet(wb, ws, opts.sheetName ?? 'ExelCFR');
+  XLSX.utils.book_append_sheet(wb, ws, opts.sheetName ?? 'ExcelCFR');
   XLSX.writeFile(wb, ensureExt(opts.filename, '.xlsx'), { compression: true });
 }
 
@@ -83,5 +83,5 @@ export function buildDefaultFilename(mainLabel: string): string {
     .replace('T', '_')
     .slice(0, 19);
   const base = mainLabel.replace(/\.[^.]+$/, '').replace(/[^\w-]+/g, '_');
-  return `ExelCFR_${base || 'risultato'}_${stamp}`;
+  return `ExcelCFR_${base || 'risultato'}_${stamp}`;
 }

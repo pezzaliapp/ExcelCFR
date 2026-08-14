@@ -9,11 +9,11 @@ interface Props {
 }
 
 const SECTIONS: Array<{ id: string; title: string }> = [
-  { id: 'cos-e', title: '1. Cos’è ExelCFR e a cosa serve' },
+  { id: 'cos-e', title: '1. Cos’è ExcelCFR e a cosa serve' },
   { id: 'glossario', title: '2. Glossario veloce' },
   { id: 'esempio', title: '3. Esempio pratico — caso officina ricambi' },
-  { id: 'aprire', title: '4. Aprire ExelCFR la prima volta' },
-  { id: 'installare', title: '5. Installare ExelCFR come app (PWA)' },
+  { id: 'aprire', title: '4. Aprire ExcelCFR la prima volta' },
+  { id: 'installare', title: '5. Installare ExcelCFR come app (PWA)' },
   { id: 'step-1', title: '6. Step 1 — Caricare i file' },
   { id: 'step-2', title: '7. Step 2 — Scegliere il file principale' },
   { id: 'step-3', title: '8. Step 3 — Configurare le regole di lookup' },
@@ -40,7 +40,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
       </div>
 
       <h1 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
-        Guida a ExelCFR
+        Guida a ExcelCFR
       </h1>
       <p className="mt-3 text-base leading-relaxed text-slate-600 dark:text-slate-300">
         Una guida pratica per chi riceve listini Excel/CSV dai fornitori e vuole unirli al proprio
@@ -73,18 +73,18 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
       <article className="mt-10 space-y-12 text-slate-800 dark:text-slate-100">
         <Section id="cos-e" title={SECTIONS[0].title}>
           <Lead>
-            In poche righe: cosa fa ExelCFR e perché può farti risparmiare ore di lavoro manuale su
+            In poche righe: cosa fa ExcelCFR e perché può farti risparmiare ore di lavoro manuale su
             Excel.
           </Lead>
           <P>
             Hai due elenchi e vuoi <strong>unirli accoppiando le righe in base a un codice in
-            comune</strong>? ExelCFR fa esattamente questo. Carichi il tuo listino, carichi il
+            comune</strong>? ExcelCFR fa esattamente questo. Carichi il tuo listino, carichi il
             listino del fornitore, scegli quale colonna è il «punto d’incontro» (di solito il
             codice articolo) e indichi quali informazioni vuoi portarti dietro.
           </P>
           <P>
             Questa operazione, se la facessi in Excel, si chiamerebbe <em>CERCA.VERT</em> (in
-            inglese <em>VLOOKUP</em>). Da qui il nome <strong>ExelCFR</strong>: «Excel» + «CFR» (CerFR
+            inglese <em>VLOOKUP</em>). Da qui il nome <strong>ExcelCFR</strong>: «Excel» + «CFR» (CerFR
             = CERCA.VERT). L’app però non ti chiede di scrivere formule: clicchi e basta.
           </P>
           <P>
@@ -121,7 +121,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
                 <Td>Intestazione</Td>
                 <Td>
                   La prima riga del file, che contiene i nomi delle colonne (es. «Codice»,
-                  «Descrizione», «Prezzo»). ExelCFR la riconosce di default.
+                  «Descrizione», «Prezzo»). ExcelCFR la riconosce di default.
                 </Td>
               </tr>
               <tr>
@@ -134,7 +134,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
               <tr>
                 <Td>Match (corrispondenza)</Td>
                 <Td>
-                  Quando ExelCFR trova nel file sorgente la stessa chiave del file principale.
+                  Quando ExcelCFR trova nel file sorgente la stessa chiave del file principale.
                   Quando non la trova, è un «no-match».
                 </Td>
               </tr>
@@ -201,7 +201,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
             </tbody>
           </Table>
           <P>
-            Le celle in verde sono quelle che ExelCFR ha riempito; le altre sono rimaste come le
+            Le celle in verde sono quelle che ExcelCFR ha riempito; le altre sono rimaste come le
             avevi scritte tu.
           </P>
         </Section>
@@ -215,7 +215,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
           </P>
           <P>A schermo trovi:</P>
           <Ul>
-            <Li><strong>Header in alto</strong>: il nome ExelCFR, il badge verde «100% locale, nessun upload», il pulsante <em>Guida</em> (questo manuale!), il toggle tema chiaro/scuro e il link al repository GitHub.</Li>
+            <Li><strong>Header in alto</strong>: il nome ExcelCFR, il badge verde «100% locale, nessun upload», il pulsante <em>Guida</em> (questo manuale!), il toggle tema chiaro/scuro e il link al repository GitHub.</Li>
             <Li><strong>4 step verticali numerati</strong> al centro: Carica i file → Scegli il principale → Configura le regole → Anteprima ed esporta.</Li>
             <Li><strong>Footer</strong> con la versione, link alla guida, link «Note legali» (riapre il disclaimer) e link al repository.</Li>
           </Ul>
@@ -227,7 +227,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
 
         <Section id="installare" title={SECTIONS[4].title}>
           <Lead>
-            Puoi installare ExelCFR come una vera app: si apre con un’icona, in finestra propria,
+            Puoi installare ExcelCFR come una vera app: si apre con un’icona, in finestra propria,
             senza barra del browser.
           </Lead>
           <Ul>
@@ -236,7 +236,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
             <Li><strong>Android con Chrome</strong>: tocca i tre puntini in alto a destra → «Installa app» (o «Aggiungi a schermata Home»).</Li>
           </Ul>
           <P>
-            Dopo l’installazione l’icona di ExelCFR è sul desktop o nella schermata principale del telefono.
+            Dopo l’installazione l’icona di ExcelCFR è sul desktop o nella schermata principale del telefono.
             La useresti uguale a un programma installato, ma è sempre la stessa app web: nessun aggiornamento manuale, niente store.
           </P>
         </Section>
@@ -259,9 +259,9 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
           </Ul>
           <H3>Errori comuni</H3>
           <Ul>
-            <Li>Le prime righe del file sono righe vuote o un titolo: ExelCFR le considererebbe «dati». Aprilo in Excel e cancellale prima di caricarlo.</Li>
+            <Li>Le prime righe del file sono righe vuote o un titolo: ExcelCFR le considererebbe «dati». Aprilo in Excel e cancellale prima di caricarlo.</Li>
             <Li>L’intestazione è in italiano in un file e in inglese nell’altro: nessun problema, basta che ricordi quali colonne accoppiare.</Li>
-            <Li>Il CSV usa il punto e virgola e ti aspettavi la virgola: ExelCFR <strong>rileva il separatore in automatico</strong>, lo vedrai indicato sotto il nome del file.</Li>
+            <Li>Il CSV usa il punto e virgola e ti aspettavi la virgola: ExcelCFR <strong>rileva il separatore in automatico</strong>, lo vedrai indicato sotto il nome del file.</Li>
           </Ul>
         </Section>
 
@@ -269,7 +269,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
           <Lead>Decidi qual è il file da arricchire e quali sono le sorgenti.</Lead>
           <P>
             Il <strong>file principale</strong> è quello che vuoi arricchire e che alla fine
-            scaricherai modificato. Tutti gli altri sono <strong>sorgenti</strong>: ExelCFR ci pesca
+            scaricherai modificato. Tutti gli altri sono <strong>sorgenti</strong>: ExcelCFR ci pesca
             informazioni, ma non le tocca.
           </P>
           <Note>
@@ -280,7 +280,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
 
         <Section id="step-3" title={SECTIONS[7].title}>
           <Lead>
-            È la sezione più importante: dici ad ExelCFR <em>cosa</em> cercare, <em>dove</em> e{' '}
+            È la sezione più importante: dici ad ExcelCFR <em>cosa</em> cercare, <em>dove</em> e{' '}
             <em>cosa farne</em>.
           </Lead>
 
@@ -301,7 +301,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
 
           <H3>8.3 Modalità di confronto</H3>
           <P>
-            È il «come» ExelCFR decide se due chiavi sono la stessa cosa. La modalità di default
+            È il «come» ExcelCFR decide se due chiavi sono la stessa cosa. La modalità di default
             (e consigliata) è <strong>Smart</strong>: copre il 90% dei casi reali, in particolare
             il classico problema dei codici salvati come testo in un file e come numero
             nell’altro.
@@ -406,7 +406,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
             <Li><strong>Senza match</strong> — righe per cui non c’è corrispondenza nel sorgente. Da controllare a mano.</Li>
             <Li><strong>Celle riempite</strong> — celle prima vuote che ora hanno un valore (modalità «Riempi colonna esistente»).</Li>
             <Li><strong>Celle sovrascritte</strong> — celle prima piene che sono state sostituite (solo con la spunta «Sovrascrivi»).</Li>
-            <Li><strong>Celle lasciate intatte</strong> — celle che ExelCFR non ha toccato (già piene + niente sovrascrittura, oppure no-match su cella piena).</Li>
+            <Li><strong>Celle lasciate intatte</strong> — celle che ExcelCFR non ha toccato (già piene + niente sovrascrittura, oppure no-match su cella piena).</Li>
           </Ul>
           <H3>Validazione</H3>
           <P>
@@ -434,7 +434,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
           </P>
           <P>
             <strong>«Carica configurazione»</strong> riapplica le regole salvate ai file che hai
-            caricato adesso. Se una colonna citata nella config non esiste più nel file, ExelCFR te
+            caricato adesso. Se una colonna citata nella config non esiste più nel file, ExcelCFR te
             lo segnala con un avviso e salta la regola problematica.
           </P>
           <Note>
@@ -505,10 +505,10 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
         </Section>
 
         <Section id="privacy" title={SECTIONS[11].title}>
-          <Lead>I tuoi listini sono dati sensibili. Ecco perché ExelCFR è progettato così.</Lead>
+          <Lead>I tuoi listini sono dati sensibili. Ecco perché ExcelCFR è progettato così.</Lead>
           <P>
             Tutto avviene <strong>dentro il tuo browser</strong>: il parsing dei file Excel, il
-            CERCA.VERT, l’export. <strong>ExelCFR non ha un server</strong> che riceve i tuoi
+            CERCA.VERT, l’export. <strong>ExcelCFR non ha un server</strong> che riceve i tuoi
             file. Non c’è raccolta di dati personali, niente cookie di tracciamento, niente
             account.
           </P>
@@ -526,7 +526,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
 
         <Section id="faq" title={SECTIONS[12].title}>
           <Lead>Le domande che ci si fa al primo utilizzo.</Lead>
-          <Faq q="Posso usare ExelCFR senza internet?">
+          <Faq q="Posso usare ExcelCFR senza internet?">
             Sì, dopo la prima apertura. Il browser ha salvato l’app come Progressive Web App: la
             ritrovi anche offline. Se la installi sul desktop, si comporta come un programma.
           </Faq>
@@ -540,17 +540,17 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
           </Faq>
           <Faq q="Quanto può essere grande un file?">
             Indicativamente fino a qualche centinaio di migliaia di righe. Sopra le 200 000 righe
-            o i 100 MB compare un avviso non bloccante. ExelCFR usa un Web Worker così la pagina
+            o i 100 MB compare un avviso non bloccante. ExcelCFR usa un Web Worker così la pagina
             resta reattiva durante l’elaborazione.
           </Faq>
           <Faq q="Excel mi cambia «00123» in «123»: come tengo lo zero davanti?">
             Excel convertirebbe il codice in numero. Per evitarlo, in Excel formatta la colonna
             come <em>Testo</em> prima di inserire i codici, oppure aggiungi un apice singolo davanti
             (<code>' 00123</code>). Se i codici nel file di partenza sono già stringhe,
-            ExelCFR li conserva.
+            ExcelCFR li conserva.
           </Faq>
           <Faq q="Le date Excel mi escono come numeri strani: perché?">
-            Excel rappresenta le date come numeri seriali. ExelCFR le riconosce come date e nel
+            Excel rappresenta le date come numeri seriali. ExcelCFR le riconosce come date e nel
             CSV le formatta in <code>gg/mm/aaaa</code>. Se preferisci tenerle «vere» date, esporta
             in <code>.xlsx</code>.
           </Faq>
@@ -624,7 +624,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
             </Li>
             <Li>
               <strong>L’app si blocca con file enormi</strong> — chiudi le altre schede, riapri
-              ExelCFR, riprova. Sopra ~200 000 righe può richiedere parecchi secondi anche su computer
+              ExcelCFR, riprova. Sopra ~200 000 righe può richiedere parecchi secondi anche su computer
               veloci.
             </Li>
             <Li>
@@ -647,7 +647,7 @@ export function Manuale({ onClose, onOpenDisclaimer, appUrl, repoUrl }: Props) {
               <ShieldAlert className="mt-0.5 flex-shrink-0 text-amber-600 dark:text-amber-300" size={20} />
               <div className="space-y-2 text-sm leading-relaxed text-slate-800 dark:text-slate-100">
                 <p>
-                  ExelCFR è gratuito e fornito «così com’è». <strong>Verifica sempre i
+                  ExcelCFR è gratuito e fornito «così com’è». <strong>Verifica sempre i
                   risultati</strong> prima di usarli per decisioni commerciali, contabili o
                   operative.
                 </p>

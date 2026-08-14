@@ -9,7 +9,7 @@ export function Footer({ repoUrl, version, onOpenGuide, onOpenDisclaimer }: Prop
   return (
     <footer className="mt-16 border-t border-slate-200 py-6 text-center text-xs text-slate-500 dark:border-slate-800 dark:text-slate-400">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-3 gap-y-1 px-4">
-        <span>ExelCFR v{version}</span>
+        <span>ExcelCFR v{version}</span>
         <span aria-hidden>·</span>
         <button
           type="button"

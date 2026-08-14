@@ -1,6 +1,6 @@
 # Changelog
 
-Tutte le modifiche rilevanti a ExelCFR vengono annotate in questo file.
+Tutte le modifiche rilevanti a ExcelCFR vengono annotate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/it/1.1.0/) e il progetto segue [Semantic Versioning](https://semver.org/lang/it/).
 
@@ -59,7 +59,7 @@ Il formato è basato su [Keep a Changelog](https://keepachangelog.com/it/1.1.0/)
 
 - Prima release pubblica: scaffold Vite + React + TS + Tailwind, parsing Excel/CSV con SheetJS, motore di CERCA.VERT con Map indicizzata, esportazione `.xlsx` / `.csv`, UI a 4 step in italiano con dark mode, PWA installabile (manifest + service worker autoUpdate), workflow GitHub Pages.
 
-[0.4.0]: https://github.com/pezzaliapp/ExelCFR/releases/tag/v0.4.0
-[0.3.0]: https://github.com/pezzaliapp/ExelCFR/releases/tag/v0.3.0
-[0.2.0]: https://github.com/pezzaliapp/ExelCFR/releases/tag/v0.2.0
-[0.1.0]: https://github.com/pezzaliapp/ExelCFR/releases/tag/v0.1.0
+[0.4.0]: https://github.com/pezzaliapp/ExcelCFR/releases/tag/v0.4.0
+[0.3.0]: https://github.com/pezzaliapp/ExcelCFR/releases/tag/v0.3.0
+[0.2.0]: https://github.com/pezzaliapp/ExcelCFR/releases/tag/v0.2.0
+[0.1.0]: https://github.com/pezzaliapp/ExcelCFR/releases/tag/v0.1.0

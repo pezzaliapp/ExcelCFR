@@ -16,7 +16,7 @@ export function Header({ repoUrl, onOpenGuide }: Props) {
           </div>
           <div>
             <h1 className="text-lg font-semibold tracking-tight text-slate-900 dark:text-white">
-              ExelCFR
+              ExcelCFR
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">
               CERCA.VERT tra listini, direttamente nel browser

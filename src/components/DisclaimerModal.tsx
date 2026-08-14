@@ -140,7 +140,7 @@ export function DisclaimerModal({ open, mode, onAccept, onClose }: Props) {
           className="max-h-[60vh] space-y-3 overflow-y-auto px-5 py-4 text-sm leading-relaxed text-slate-700 dark:text-slate-200"
         >
           <p>
-            ExelCFR è uno strumento gratuito fornito «così com'è», senza alcuna garanzia di
+            ExcelCFR è uno strumento gratuito fornito «così com'è», senza alcuna garanzia di
             funzionamento, accuratezza dei risultati o adeguatezza a uno scopo specifico.
           </p>
           <p>
@@ -157,7 +157,7 @@ export function DisclaimerModal({ open, mode, onAccept, onClose }: Props) {
           <p>
             L'autore e i contributori del progetto <strong>non si assumono alcuna responsabilità</strong>{' '}
             per perdite economiche, errori di prezzo, problemi con fornitori o clienti, o altri
-            danni diretti o indiretti derivanti dall'uso o dal malfunzionamento di ExelCFR.
+            danni diretti o indiretti derivanti dall'uso o dal malfunzionamento di ExcelCFR.
           </p>
           <p>
             <strong>Privacy</strong>: l'app è interamente client-side, i tuoi file restano sul tuo

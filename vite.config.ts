@@ -2,9 +2,9 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
-// base = '/ExelCFR/' so the app works when deployed under github.io/<user>/ExelCFR/
+// base = '/ExcelCFR/' so the app works when deployed under github.io/<user>/ExcelCFR/
 export default defineConfig({
-  base: '/ExelCFR/',
+  base: '/ExcelCFR/',
   plugins: [
     react(),
     VitePWA({
@@ -16,8 +16,8 @@ export default defineConfig({
         navigateFallback: 'index.html',
       },
       manifest: {
-        name: 'ExelCFR — CERCA.VERT tra listini',
-        short_name: 'ExelCFR',
+        name: 'ExcelCFR — CERCA.VERT tra listini',
+        short_name: 'ExcelCFR',
         description:
           'Confronta e unisci listini Excel/CSV con CERCA.VERT, direttamente nel browser. Nessun dato esce dal tuo dispositivo.',
         theme_color: '#0f766e',

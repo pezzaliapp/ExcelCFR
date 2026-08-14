@@ -16,8 +16,8 @@ import { RulesStep } from './steps/RulesStep';
 import { UploadStep } from './steps/UploadStep';
 import type { FileData, LookupRule } from './types';
 
-const REPO_URL = 'https://github.com/pezzaliapp/ExelCFR';
-const APP_URL = 'https://www.alessandropezzali.it/ExelCFR/';
+const REPO_URL = 'https://github.com/pezzaliapp/ExcelCFR';
+const APP_URL = 'https://www.alessandropezzali.it/ExcelCFR/';
 const VERSION = '0.4.0';
 
 type View = 'app' | 'guide';

@@ -1,4 +1,4 @@
-name: Deploy ExelCFR to GitHub Pages
+name: Deploy ExcelCFR to GitHub Pages
 
 on:
   push:
